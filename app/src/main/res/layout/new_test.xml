@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#CCCCCC">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="389dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/新的测试"
+        style="@style/red_text"
+        android:layout_width="384dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:text="新的测试"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="43dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/actionModeCloseDrawable"
+        android:onClick="back"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_marginStart="296dp"
+        android:layout_marginLeft="296dp"
+        android:background="?attr/colorPrimary"
+        android:text="发布"
+        android:onClick="postTest"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/新的测试"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="385dp"
+        android:layout_height="525dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:background="#FFFFFF"
+                android:inputType="textPersonName"
+                android:text="题目一:"
+                android:gravity="left"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textview11"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="A:"
+                android:textSize="18dp"/>
+
+            <EditText
+                android:id="@+id/radio11"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="6"
+                android:ems="10"
+                android:background="#FFFFFF"
+                android:inputType="textPersonName"
+               />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="B:"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/radio12"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="6"
+                    android:ems="10"
+                    android:background="#FFFFFF"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview13"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="C:"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/radio13"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="6"
+                    android:ems="10"
+                    android:background="#FFFFFF"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview14"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="D:"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/radio14"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="6"
+                    android:ems="10"
+                    android:background="#FFFFFF"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="正确答案:"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/radiogroup1"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="3"
+                    android:ems="10"
+                    android:background="#FFFFFF"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:background="#FFFFFF"
+                android:inputType="textPersonName"
+                android:text="题目二:"
+                android:gravity="left"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview21"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="A:"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/radio21"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="6"
+                    android:ems="10"
+                    android:background="#FFFFFF"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview22"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="B:"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/radio22"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="6"
+                    android:ems="10"
+                    android:background="#FFFFFF"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview23"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="C:"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/radio23"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="6"
+                    android:ems="10"
+                    android:background="#FFFFFF"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview24"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="D:"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/radio24"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="6"
+                    android:ems="10"
+                    android:background="#FFFFFF"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="正确答案:"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/radiogroup2"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="3"
+                    android:ems="10"
+                    android:background="#FFFFFF"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:background="#FFFFFF"
+                android:inputType="textPersonName"
+                android:text="题目三:"
+                android:gravity="left"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview31"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="A:"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/radio31"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="6"
+                    android:ems="10"
+                    android:background="#FFFFFF"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview32"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="B:"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/radio32"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="6"
+                    android:ems="10"
+                    android:background="#FFFFFF"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview33"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="C:"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/radio33"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="6"
+                    android:ems="10"
+                    android:background="#FFFFFF"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview34"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="D:"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/radio34"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="6"
+                    android:ems="10"
+                    android:background="#FFFFFF"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="正确答案:"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/radiogroup3"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="3"
+                    android:ems="10"
+                    android:background="#FFFFFF"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:background="#FFFFFF"
+                android:inputType="textPersonName"
+                android:text="题目四:"
+                android:gravity="left"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview41"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="A:"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/radio41"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="6"
+                    android:ems="10"
+                    android:background="#FFFFFF"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview42"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="B:"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/radio42"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="6"
+                    android:ems="10"
+                    android:background="#FFFFFF"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview43"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="C:"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/radio43"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="6"
+                    android:ems="10"
+                    android:background="#FFFFFF"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview44"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="D:"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/radio44"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="6"
+                    android:ems="10"
+                    android:background="#FFFFFF"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="正确答案:"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/radiogroup4"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="3"
+                    android:ems="10"
+                    android:background="#FFFFFF"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/text5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:background="#FFFFFF"
+                android:inputType="textPersonName"
+                android:text="题目五:"
+                android:gravity="left"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview51"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="A:"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/radio51"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="6"
+                    android:ems="10"
+                    android:background="#FFFFFF"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview52"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="B:"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/radio52"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="6"
+                    android:ems="10"
+                    android:background="#FFFFFF"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview53"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="C:"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/radio53"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="6"
+                    android:ems="10"
+                    android:background="#FFFFFF"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview54"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="D:"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/radio54"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="6"
+                    android:ems="10"
+                    android:background="#FFFFFF"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textview5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="正确答案:"
+                android:textSize="18dp"/>
+
+            <EditText
+                android:id="@+id/radiogroup5"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:ems="10"
+                android:background="#FFFFFF"
+                android:inputType="textPersonName"
+                 />
+
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textview30"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="截止时间："
+                android:textSize="18dp"/>
+
+            <EditText
+                android:id="@+id/editText30"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:background="#FFFFFF"
+                android:ems="10"
+                android:inputType="time"
+                android:layout_weight="3"
+                />
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

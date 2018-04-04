@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.easyclass.claraliu.core">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:fullBackupContent="@xml/backup_descriptor">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".student.StudentMainActivity">
+
+        </activity>
+        <activity android:name=".student.StuVoteActivity">
+
+        </activity>
+        <activity android:name=".student.StuAnnounceActivity">
+
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".student.ClassCommunication" />
+        <activity android:name=".student.StudentCourseActivity">
+
+        </activity>
+
+        <activity android:name=".teacher.TeacherMain">
+
+        </activity>
+<activity android:name=".student.StuNewClassTest">
+
+</activity>
+       <activity android:name=".student.StuClassTestMain">
+
+       </activity>
+       <activity android:name=".student.StuPreClassTest">
+
+       </activity>
+        <activity android:name=".student.CourseCommentActivity">
+
+        </activity>
+<activity android:name=".student.ClassCommentSuccessActivity">
+</activity>
+        <activity android:name=".student.CourseCommentSuccessActivity">
+        </activity>
+        <activity android:name=".student.HomeworkUploadActivity" />
+        <activity android:name=".student.StudentHomeworkActivity" />
+        <activity android:name=".teacher.AddNoticeActivity">
+        </activity>
+        <activity android:name=".teacher.CheckVoteActivity" />
+        <activity android:name=".teacher.CreateTestActivity" />
+        <activity android:name=".teacher.TeacherCommActivity">
+        </activity>
+        <activity android:name=".teacher.TeacherCourseActivity">
+        </activity>
+        <activity android:name=".teacher.ShowHomeworkActivity" />
+        <activity android:name=".teacher.ShowCourseCommentActivity" />
+        <activity android:name=".teacher.AttendanceConfirm" />
+        <activity android:name=".student.AttendanceActivity" />
+        <activity android:name=".teacher.StudentHomeworkConditionActivity" />
+    </application>
+
+</manifest>
